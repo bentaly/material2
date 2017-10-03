@@ -15,7 +15,7 @@ import 'rxjs/add/operator/map';
   styleUrls: ['table-pagination-example.css'],
   templateUrl: 'table-pagination-example.html',
 })
-export class TablePaginationExample {
+export class TablePaginationExample implements OnInit {
   displayedColumns = ['userId', 'userName', 'progress', 'color'];
   exampleDatabase = new ExampleDatabase();
   dataSource: ExampleDataSource | null;
